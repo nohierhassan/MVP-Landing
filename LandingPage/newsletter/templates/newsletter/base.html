@@ -1,0 +1,36 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+{% include "newsletter/head_css.html" %}
+
+
+
+      <style>
+          {% block style %}
+          {% endblock %}
+      </style>
+
+  </head>
+
+  <body>
+
+<!--template include-->
+    {% include 'newsletter/navbar-top.html'  %}
+ {% block content2 %}
+{% endblock %}
+
+
+   {% block content %}
+      {% endblock %}
+
+{% include "newsletter/js.html" %}
+  </body>
+</html>

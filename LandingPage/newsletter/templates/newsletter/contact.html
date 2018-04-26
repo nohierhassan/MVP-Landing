@@ -1,0 +1,35 @@
+{% extends "newsletter/base.html"  %}
+{% load static %}
+{% load crispy_forms_tags %}
+<link rel="stylesheet" type="text/css" href="{% static 'newsletter/style.css' %}" />
+
+
+<style>
+{% block style %}
+
+{% endblock %}
+</style>
+
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col-8 my_lead_class">
+        <h1> {{title}}</h1>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class='col-6 my_lead_class'>
+
+
+
+                <form method="POST" action="."> {% csrf_token %}
+                    {{form|crispy}}
+                    <input type ="button" class="btn btn-primary" value="Send">
+                </form>
+    </div>
+</div>
+{% endblock%}

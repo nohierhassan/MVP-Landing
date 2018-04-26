@@ -1,0 +1,24 @@
+/*
+This is my custom css file
+*/
+.my_lead_class{
+     text-align:center;
+     margin:auto;
+
+}
+
+ .jumbotron{
+background-color: #b676ae;
+color:#FFF;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin-right: -10px;
+
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin-left: -4px;
+
+}
